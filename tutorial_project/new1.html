@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>wizard</title>
+	<style type="text/css">
+		.navbar-brand{
+			font-family: fantasy;
+		}
+		.nav{
+			font-family: serif;
+		}
+		body{
+			background-color: #1652;
+		}
+		.scroll{
+			top: 0%;
+			/*bottom: 0*/
+			position: center;
+			width: 100%;
+		}
+		.first{
+			border-radius: 50%;
+		}
+		.topnav-right{
+			float: right;
+		}
+		.breadcrumb{
+			background-color: ;
+		}
+		.footer{
+			background-color: #000;
+			text-align: center;
+		}
+		.footer:hover{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<nav class="navbar navbar-inverse">
+  <div class="container-flude">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      	<img src="logo.png" alt="logo" style="width:40px;margin: -37%;">
+      </a>
+      <a class="navbar-brand" href="#">Wizard</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active tip"><a href="#" title="This is a home page">Home</a></li>
+      <li class="tip" ><a href="#" title="This is product page">product</a></li>
+      <li class="tip" ><a href="#" title="This is about page">About</a></li>
+      <li class="tip"><a href="#" title="Ple log in ">log in</a></li>
+      <div class="topnav-right">
+      <button type="button" class="btn btn-default btn-lg">
+	  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Rate this web-site
+	  </button>
+	  </div>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="container  scroll">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img width="100%" src="1.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img width="100%" src="2.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img width="100%" src="6.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<div class="container">
+<div class="row">
+	<div class="first">
+	<div class="col-sm-4">
+		<img src="4.jpg" width="90%">
+	</div>
+	<div class="col-sm-4">
+		<img src="5.jpg" width="76%">
+	</div>
+	<div class="col-sm-4">
+		<img src="6.jpg" width="100%">
+	</div>
+</div>
+</div>
+<nav aria-label="Page navigation">
+  <ul class="pagination pagination-sm">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Perfume's</a>&nbsp;<span class="badge">80</span></li>
+  <li><a href="#">Digital camera's</a>&nbsp;<span class="badge">75</span></li>
+  <li><a href="#">Mobile's</a>&nbsp;<span class="badge">90</span></li>
+  <li class="active">see More</li>
+</ol>
+<div class="jumbotron">
+  <h1>Hello, Costomer!</h1>
+  <p><em>This web site provide Manny product whatever you want...</em></p>
+  <p>All product are <mark> assure 100%</mark></p>
+  <p><a class="btn btn-primary btn-lg" id="btn1" href="#" role="button">Learn more</a></p>
+</div>
+<div class="well" style="text-align: center;font-family: serif;font: bold;">This Web-site Can Be Save Your <mark>Time Effort & Money</mark></div>
+</div>
+
+</div>
+<div class="footer">
+<div class="container-flude">
+	<div class="row">
+		<div class="col-sm-4">
+			<h2>contact</h2>
+		</div>
+		<div class="col-sm-4">
+			<h2>About</h2>
+			<address>
+				<strong>Akash,enc</strong>
+				kharegov kalwa,<br>
+				parsik nagar <br>
+				400605...<br>
+				contact no:8108596770.
+
+			</address>
+		</div>
+		<div class="col-sm-4">
+			<h2>Social Media</h2>
+		</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".active").tooltip();
+	})
+	$("#btn1").click(function(){
+		$(this).button('loading');
+	})
+
+</script>
+</body>
+</html>
